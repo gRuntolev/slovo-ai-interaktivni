@@ -56,7 +56,6 @@ lib/generated/
 
 # Променливи на средата, API ключове и тайни
 .env
-.env.*
 *.env
 *.secret
 
