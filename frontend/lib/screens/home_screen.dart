@@ -2,23 +2,28 @@ import 'package:flutter/material.dart';
 import '../models/analysis_result.dart';
 import '../services/api_service.dart';
 
+
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
+
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
 }
 
+
 class _HomeScreenState extends State<HomeScreen> {
   final TextEditingController _textController = TextEditingController();
   bool _isLoading = false;
-  
+ 
   // История на съобщенията за чат интерфейса
   final List<Map<String, dynamic>> _messages = [];
+
 
   Future<void> _handleAnalyze() async {
     final input = _textController.text.trim();
     if (input.isEmpty) return;
+
 
     // Добавяме потребителското съобщение
     setState(() {
@@ -26,6 +31,7 @@ class _HomeScreenState extends State<HomeScreen> {
       _isLoading = true;
     });
     _textController.clear();
+
 
     try {
       final res = await ApiService.analyzeText(input);
@@ -42,6 +48,7 @@ class _HomeScreenState extends State<HomeScreen> {
       });
     }
   }
+
 
   @override
   Widget build(BuildContext context) {
@@ -75,7 +82,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   TextButton(onPressed: () {}, child: const Text('Статии', style: TextStyle(color: Colors.white, fontSize: 16))),
                   TextButton(onPressed: () {}, child: const Text('За нас', style: TextStyle(color: Colors.white, fontSize: 16))),
                   const SizedBox(width: 16),
-                  
+                 
                   // --- ПРЕЛИВАЩ БЪЛГАРСКИ ФЛАГ ---
                   Container(
                     width: 48,
@@ -125,6 +132,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
 
+
                   // --- CHAT DISPLAY AREA ---
                   Expanded(
                     child: Column(
@@ -146,11 +154,13 @@ class _HomeScreenState extends State<HomeScreen> {
                           ),
                         ),
 
+
                         if (_isLoading)
                           const Padding(
                             padding: EdgeInsets.all(8.0),
                             child: CircularProgressIndicator(),
                           ),
+
 
                         // --- BOTTOM INPUT BAR ---
                         Container(
@@ -192,6 +202,7 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
+
   Widget _buildSidebarItem(String title, {bool isHeader = false}) {
     return ListTile(
       dense: true,
@@ -206,6 +217,7 @@ class _HomeScreenState extends State<HomeScreen> {
       onTap: () {},
     );
   }
+
 
   Widget _buildUserBubble(String text) {
     return Align(
@@ -222,6 +234,7 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
     );
   }
+
 
   Widget _buildAiBubble(AnalysisResult res) {
     return Align(
@@ -255,6 +268,7 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
+
   Widget _buildErrorBubble(String text) {
     return Align(
       alignment: Alignment.centerLeft,
@@ -270,5 +284,3 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 }
-
-

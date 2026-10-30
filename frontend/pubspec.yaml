@@ -11,12 +11,16 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.8
+  flutter_web_plugins:
+    sdk: flutter
   
   # Пакет за зареждане на .env файла с API ключа
   flutter_dotenv: ^5.1.0
   
   # Официален пакет за интеграция с Gemini API
-  google_generative_ai: ^0.4.0
+  google_generative_ai: ^0.4.7
+  firebase_core: ^5.1.0
+  google_fonts: ^9.0.0
 
 dev_dependencies:
   flutter_test:
@@ -29,3 +33,4 @@ flutter:
   # Деклариране на .env файла като asset
   assets:
     - .env
+    - knowledge_base.json
