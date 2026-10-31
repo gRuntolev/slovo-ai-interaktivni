@@ -1,0 +1,15 @@
+[33m8c7f91c[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31mupstream/main[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{0}: pull upstream main: Fast-forward
+[33ma728df9[m HEAD@{1}: checkout: moving from feature/api-key to main
+[33m9bd2fa1[m[33m ([m[1;32mfeature/api-key[m[33m)[m HEAD@{2}: commit: brbrbr
+[33m1048c3b[m[33m ([m[1;31morigin/feature/api-key[m[33m)[m HEAD@{3}: checkout: moving from main to feature/api-key
+[33ma728df9[m HEAD@{4}: reset: moving to HEAD
+[33ma728df9[m HEAD@{5}: pull upstream main: Fast-forward
+[33m8b37b0f[m HEAD@{6}: checkout: moving from main to main
+[33m8b37b0f[m HEAD@{7}: reset: moving to origin/main
+[33m78cd8bc[m HEAD@{8}: reset: moving to HEAD
+[33m78cd8bc[m HEAD@{9}: checkout: moving from main to main
+[33m78cd8bc[m HEAD@{10}: checkout: moving from main to main
+[33m78cd8bc[m HEAD@{11}: commit: feat: добавен seedRules.js скрипт и качени правила във Firestore - създадена база данни
+[33m698be17[m HEAD@{12}: pull upstream main: Fast-forward
+[33m47274a6[m HEAD@{13}: checkout: moving from main to main
+[33m47274a6[m HEAD@{14}: clone: from https://github.com/gRuntolev/slovo-ai-interaktivni.git

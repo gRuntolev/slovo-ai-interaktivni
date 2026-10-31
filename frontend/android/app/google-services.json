@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "224766570311",
+    "project_id": "slovo-ai-interaktivni",
+    "storage_bucket": "slovo-ai-interaktivni.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:224766570311:android:9dedbfe72e8da5900c2662",
+        "android_client_info": {
+          "package_name": "com.example.frontend"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLsuZqHmXuo2YBXTZFUs98EESgOoe4tfY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
